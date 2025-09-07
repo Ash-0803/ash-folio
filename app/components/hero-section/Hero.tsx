@@ -118,14 +118,6 @@ export default function Hero() {
             drive business growth forward.
           </motion.p>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={animateIn3}
-          className="w-fit mx-auto lg:mx-0"
-        >
-          <ContraButton />
-        </motion.div>
       </div>
 
       {/* IMAGE */}
