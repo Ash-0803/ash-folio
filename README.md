@@ -13,10 +13,7 @@ Hosting: Netlify
 
 [View Live Demo](https://codeash.netlify.app)
 
-# Get started
+# Inspiration
 
 Inspired from the project
-
-```
-git clone https://github.com/adex-hub/ade-folio.git
-```
+[ade-folio](https://www.adeolabadero.me/) github link
