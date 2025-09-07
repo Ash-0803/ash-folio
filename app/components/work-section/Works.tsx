@@ -13,74 +13,35 @@ export default function Works() {
 
   const works = [
     {
-      title: "Quiklearn",
-      liveLink: "https://quiklearn.app/",
+      title: "The Haven Store",
+      gitLink: "https://github.com/Ash-0803/thehavenstore",
+      liveLink: "https://thehavenstore.vercel.app",
       about:
-        "Starting out as my university final year project, Quiklearn is an AI-powered tool, that creates quizzes and voice-enabled flashcards from course PDFs with a focus on usability and accessibility. This app has served well over twenty-five students helping them to assimilate and retain what they study better.",
-      stack: [
-        "next.js",
-        // "typescript",
-        "daisy ui",
-        "supabase",
-        "artificial intelligence",
-      ],
-      img: "/quiklearn.svg",
-      owner: "Quiklearn",
+        "Designed and deployed a full-stack eCommerce application with integrated Razorpay payments. Built a scalable frontend using React + Redux for efficient state management and smooth UX. Developed REST APIs in Node.js & Express.js, ensuring secure product and order handling. Integrated MongoDB for product catalog, user accounts, and order management with optimized queries. Implemented search & pagination features, making product discovery seamless for users.",
+      stack: ["react", "redux", "node.js", "express.js", "mongodb", "razorpay"],
+      img: "/img/projects/thehavenstore.gif",
+      owner: "Personal Project",
     },
     {
-      title: "NiJASIT",
-      liveLink: "https://nijasit.vercel.app/",
+      title: "StudyBug",
+      gitLink: "https://github.com/Ash-0803/DJANGO/tree/master/studybug",
+      liveLink: "",
       about:
-        "Leading the development efforts of the Nigerian Journal of Applied Science and Innovative Technology (NiJASIT)—a journal that aims to showcase African research to the global field and contribute to the world's knowledge base on science and technology—we delivered a fast, SEO-compliant journal that contributes to research on a global scale.",
-      stack: ["next.js", "javascript", "shadcn ui", "tailwindcss"],
-      img: "/nijasit.svg",
-      owner: "Bells Uni",
+        "Created a real-time chatroom platform with full CRUD support for user messages. Implemented backend in Django, managing chatrooms, participants, and user authentication. Built interactive frontend with HTML, CSS, and Vanilla JavaScript for smooth message flow. Added profile editing and admin control features (add/remove participants, manage rooms). Ensured robust data consistency across chatrooms, improving collaboration reliability.",
+      stack: ["django", "html", "css", "javascript", "python"],
+      img: "/img/projects/studybug.gif",
+      owner: "Personal Project",
     },
     {
-      title: "Offset Africa",
-      liveLink: "https://offsetcomms.africa/",
+      title: "p2pSolar",
+      gitLink: "https://github.com/trijagati/p2psolar",
+      liveLink: "",
       about:
-        "Offset Communications Africa’s website really allows them to stand out in the PR sector. It shows their works and case studies — highlighting their expertise and educating users about the company philosophy.",
-      stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-      img: "/offset-folio.svg",
-      owner: "Offset",
+        "Designed a platform for peer-to-peer solar energy trading with future blockchain integration. Delivered a visually appealing, intuitive frontend that simplifies energy transactions. Built REST APIs to handle POST/GET requests, ensuring reliable data exchange. Developed a scalable backend to support future blockchain features and real-time updates. Pioneered the concept of making solar energy buying/selling as easy as online shopping.",
+      stack: ["react", "node.js", "rest api", "blockchain", "javascript"],
+      img: "/img/projects/p2psolar.jpg",
+      owner: "Personal Project",
     },
-    // {
-    //   title: "Shortly",
-    //   gitLink: "https://github.com/adex-hub/url-shortening-api-landing",
-    //   liveLink: "https://lnk-shortener.netlify.app/",
-    //   about:
-    //     "A link shortener for a fictional company that effectively shortens links and stores them. No matter how many links you shorten, you can revisit the site anytime to view and manage your previously shortened links.",
-    //   stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
-    //   img: "/shortly.svg",
-    // },
-    {
-      title: "Where in the world",
-      gitLink: "https://github.com/adex-hub/where-in-the-world",
-      liveLink: "https://where-in-the-world-ade.netlify.app/",
-      about:
-        "A fun tool for checking information about any country in the world such as the country’s native name, currency, population,  border countries etc. It features dynamic routing for each country and theme switch.",
-      stack: ["react", "react-router", "javascript", "tailwindcss"],
-      img: "/witw.svg",
-    },
-    // {
-    //   title: "Yourtodo",
-    //   gitLink: "https://github.com/adex-hub/Yourtodo",
-    //   liveLink: "https://yourtodo-v1.vercel.app/",
-    //   about:
-    //     "This task management system lets you customize your name, add, delete, and edit tasks, and celebrates you when tasks are completed. It features built-in notifications and stores data in the browser, allowing you to resume tasks conveniently. Designed and developed by yours truly.",
-    //   stack: ["react", "javascript", "figma", "sass"],
-    //   img: "/todo.svg",
-    // },
-    // {
-    //   title: "Multi-step form",
-    //   gitLink: "https://github.com/adex-hub/multi-step-form-main",
-    //   liveLink: "https://ade-loremgaming.netlify.app/",
-    //   about:
-    //     "This site features a clean, user-friendly multi-step form for subscribing to a gaming service. Users input personal info, select a plan (monthly or yearly), choose add-ons (online service, larger storage, customizable profile), and review the summary before confirming.",
-    //   stack: ["html", "sass", "javascript", "ms clarity"],
-    //   img: "/multistep.svg",
-    // },
   ];
 
   const { ref, inView } = useInView({

@@ -1,11 +1,14 @@
 // "use client";
 import Link from "next/link";
-import { Syne } from "next/font/google";
+import localFont from "next/font/local";
 import Image from "next/image";
 import { useView } from "@/contexts/ViewContext";
 import { useEffect } from "react";
 
-const syne = Syne({ subsets: ["latin"] });
+const aeonik = localFont({
+  src: "../public/fonts/aeonik-medium.woff2",
+  display: "swap",
+});
 
 function NotFound() {
   // const { setSectionInView } = useView();
@@ -26,7 +29,7 @@ function NotFound() {
       </div>
       <Link
         href="/"
-        className={`text-2xl font-semibold px-3 py-2 uppercase ${syne.className} hover:bg-white hover:text-[#08233b] duration-300 rounded-xl border-2 border-white leading-none`}
+        className={`text-2xl font-semibold px-3 py-2 uppercase ${aeonik.className} hover:bg-white hover:text-[#08233b] duration-300 rounded-xl border-2 border-white leading-none`}
       >
         Come back home
       </Link>

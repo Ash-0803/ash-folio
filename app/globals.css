@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --font-kumbh-sans: Kumbh Sans, sans-serif;
 
   --background-image-image-radial: radial-gradient(
     circle,

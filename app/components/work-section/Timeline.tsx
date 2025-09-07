@@ -1,36 +1,29 @@
 "use client";
-import { Syne } from "next/font/google";
+import localFont from "next/font/local";
 import Title from "../ui/Title";
 import TimelineItem from "./TimelineItem";
 
-const syne = Syne({ subsets: ["latin"] });
+const aeonik = localFont({
+  src: "../../../public/fonts/aeonik-medium.woff2",
+  display: "swap",
+});
 
 const TimelineData = [
   {
-    companyImg: "/bluechip.svg",
-    jobTitle: "Software Engineer",
-    company: "Bluechip Technologies",
-    jobType: "Internship",
-    duration: "Mar 2024 - Sept 2024",
+    companyImg: "/img/jaypeebrothers_logo.jpeg",
+    jobTitle: "Full-Stack Developer",
+    company: "Jaypee Brothers Medical Publishers",
+    jobType: "Full-time",
+    duration: "May 2025 – Present",
     stuffIDid: [
-      "Developed fully responsive sidebars for an API marketplace web app utilizing ChakraUI for context menus, mobile drawer menus, and modals to simplify adding, viewing, updating, and deleting data.",
-      "Built a reusable table component that reduced code by 15%, improving code efficiency and maintainability.",
-      "Collaborated with a senior frontend engineer to develop various application screens, streamlining development and collaboration using GitHub",
-      "Worked on a Learning Management System fixing bugs on the frontend while adding and improving features in tandem with the backend developer using Bootsrap and React Bootstrap to streamline component styling.",
-      "Integrated seven endpoints in the Role Based Access Control (RBAC) module of a Revenue Assurance application ensuring CRUD operations could be easily performed by the admin.",
-      "Developed HTML Templates for partner companies including the financial firm KPMG.",
-    ],
-  },
-  {
-    companyImg: "/nnpc.svg",
-    jobTitle: "Intern",
-    company: "NNPC",
-    jobType: "Internship",
-    duration: "July 2023 - Sept. 2023",
-    stuffIDid: [
-      "Came up with cross functional login & sign up page designs that are now integral parts of the tools used within the company.",
-      "Led a team of fellow interns to design various templates and UI components common in internal applications such as dashboards, notification tabs, multi-step forms, tables with pagination etc. while making very impactful contributions.",
-      "I also helped interns grasp the basics of design enabling them to make meaningful contributions.",
+      "Automated PDF → DOC conversion & translation using Node, Docker, Adobe PDF API & OpenAI, reducing effort from 9 months (10 people) to 2 months (5 people), deployed at conversion.jaypeebrothers.com.",
+      "Built Reflect dashboard (React, Next.js, Django) with graphs & filters, reduced DB query time from 10s → 1s via Redis caching, and implemented secure refresh-token auth.",
+      "Reduced CLS of ejaypee e-commerce site by ∼ 97% (0.466 → 0.013), enhancing UI stability and customer experience; contributed to Flask backend with Elasticsearch indexing.",
+      "Improved responsiveness & stabilized UI of DigiNerve (EdTech) across devices (EJS, SCSS, Bootstrap), ensuring smooth user experience on tablets & phones.",
+      "Deployed apps on Vercel & AWS EC2 (via PEM), implemented cron jobs for caching & data migration (MongoDB → PostgreSQL) with < 1% data loss.",
+      "Led migration of Reflect data from MongoDB to PostgreSQL with automated cron jobs, ensuring < 1% data loss and seamless transition for production use.",
+      "Developed complex state management using Zustand for scalable dashboards, improving maintainability over Redux.",
+      "Collaborated with cross-functional teams (design, backend, QA) to deliver features end-to-end, strengthening API integration and release timelines.",
     ],
   },
 ];

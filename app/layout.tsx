@@ -1,18 +1,35 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
-import { Kumbh_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Header from "./components/header-section/Header";
 import { ViewProvider } from "@/contexts/ViewContext";
 
-const kumbhSans = Kumbh_Sans({ subsets: ["latin"] });
+const aeonik = localFont({
+  src: "../public/fonts/aeonik-medium.woff2",
+  display: "swap",
+  variable: "--font-aeonik",
+});
 
 export const metadata: Metadata = {
-  title: "Adeola Badero — Frontend Software Engineer",
+  title: "Ashish Chaudhary — FullStack Software Engineer",
   description:
     "Frontend Engineer specializing in React, Next.js, and TypeScript. Creating modern, responsive web experiences with a focus on performance and accessibility. Let's build something amazing together.",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      {
+        url: "/favicon/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+  },
+  manifest: "/favicon/site.webmanifest",
   keywords: [
     "frontend",
     "react",
@@ -29,35 +46,20 @@ export const metadata: Metadata = {
     "portfolio",
   ],
   openGraph: {
-    title: "Adeola Badero — Frontend Software Engineer",
+    title: "Ashish Chaudhary — Frontend Software Engineer",
     description:
       "Frontend Engineer formerly at Bluechip Technologies, passionate about crafting next-gen software and creative websites. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    url: "https://www.adeolabadero.me",
-    siteName: "www.adeolabadero.me",
-    images: [
-      {
-        url: "https://i.ibb.co/FKMqc28/adeola-badero.png",
-        width: 1200,
-        height: 630,
-        alt: "Adeola Badero — Frontend Software Engineer",
-      },
-      {
-        url: "https://i.ibb.co/Y8hBTR4/ade-800.png",
-        width: 800,
-        height: 800,
-        alt: "Adeola Badero — Frontend Software Engineer",
-      },
-    ],
+    url: "https://www.codeash.netlify.app",
+    siteName: "www.codeash.netlify.app",
     locale: "en-US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adeola Badero — Software Engineer",
+    title: "Ashish Chaudhary — Software Engineer",
     description:
       "Frontend Engineer specializing in React, Next.js, and TypeScript. Creating modern, responsive web experiences with a focus on performance and accessibility. Let's build something amazing together.",
-    creator: "@Ade_the_great",
-    images: ["https://i.ibb.co/FKMqc28/adeola-badero.png"],
+    creator: "@ashx083",
   },
   robots: {
     index: true,
@@ -79,7 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kumbhSans.className} max-w-[90%] xl:max-w-[1223px] w-full mx-auto overflow-x-hidden`}
+        className={`${aeonik.className} max-w-[90%] xl:max-w-[1223px] w-full mx-auto overflow-x-hidden`}
       >
         <>
           <ViewProvider>

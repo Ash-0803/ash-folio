@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { Syne } from "next/font/google";
+import localFont from "next/font/local";
 import { useView } from "@/contexts/ViewContext";
 
 // @ts-ignore
@@ -15,7 +15,10 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const syne = Syne({ subsets: ["latin"] });
+const aeonik = localFont({
+  src: "../../../public/fonts/aeonik-medium.woff2",
+  display: "swap",
+});
 
 export default function Contact() {
   const { setSectionInView } = useView();
@@ -104,7 +107,7 @@ export default function Contact() {
         {!formDisplay ? (
           <div
             className={` ${
-              syne.className
+              aeonik.className
             } flex justify-between items-center w-full duration-1000 ${
               formDisplay && "opacity-0"
             }`}
@@ -165,9 +168,9 @@ export default function Contact() {
             >
               <div className="flex items-center justify-between py-4 md:py-5 lg:py-6">
                 <Link
-                  href="https://cal.com/adeolabadero/30min"
+                  href="https://cal.com/ashx083/30min"
                   target="_blank"
-                  className={`font-bold uppercase ${syne.className} underline opacity-50`}
+                  className={`font-bold uppercase ${aeonik.className} underline opacity-50`}
                 >
                   book a call?
                 </Link>
@@ -260,7 +263,7 @@ export default function Contact() {
                     )}
                   </div>
                   <button
-                    className={`rounded-md bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] py-3 px-5 ${syne.className} font-bold uppercase mt-4`}
+                    className={`rounded-md bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] py-3 px-5 ${aeonik.className} font-bold uppercase mt-4`}
                   >
                     Send
                   </button>
