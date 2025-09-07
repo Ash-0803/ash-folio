@@ -37,7 +37,7 @@ export default function About() {
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-md md:text-lg">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
             My name is Ashish Chaudhary, a FullStack Software Engineer based in
-            India. 💡 "Developer-turned-people’s person" — I started my career
+            India. 💡 &ldquo;Developer-turned-people&rsquo;s person&rdquo; — I started my career
             building and fixing things behind the screen, from optimizing
             websites for lightning-fast performance to untangling database
             spaghetti. Now, I’m taking that same problem-solving mindset and
