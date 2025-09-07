@@ -35,7 +35,7 @@ export default function Works() {
     {
       title: "p2pSolar",
       gitLink: "https://github.com/trijagati/p2psolar",
-      liveLink: "",
+      liveLink: "https://p2psolar.vercel.app",
       about:
         "Designed a platform for peer-to-peer solar energy trading with future blockchain integration. Delivered a visually appealing, intuitive frontend that simplifies energy transactions. Built REST APIs to handle POST/GET requests, ensuring reliable data exchange. Developed a scalable backend to support future blockchain features and real-time updates. Pioneered the concept of making solar energy buying/selling as easy as online shopping.",
       stack: ["react", "node.js", "rest api", "blockchain", "javascript"],
