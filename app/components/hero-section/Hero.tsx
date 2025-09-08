@@ -70,7 +70,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="pt-36 lg:pt-0 flex flex-col lg:flex-row h-dvh items-center lg:justify-between mb-12 lg:mb-0"
+      className="pt-36 lg:pt-0 flex flex-col lg:flex-row h-dvh 2xl:h-[900px] items-center lg:justify-between mb-12 lg:mb-0"
       id="home"
     >
       <div className="text sm:w-4/5 text-center lg:text-start lg:w-[60%] flex flex-col gap-6 lg:gap-11 mb-6 lg:mb-0">

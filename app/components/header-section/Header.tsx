@@ -50,7 +50,7 @@ export default function Header() {
         ref={headerRef}
         className="fixed max-w-[90%] xl:max-w-[1223px] w-full z-10 select-none"
       >
-        <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] mt-4 sm:mt-8 backdrop-blur-md std-backdrop-blur">
+        <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] mt-4 sm:mt-8 backdrop-blur-2xl std-backdrop-blur">
           <Image
             src="/img/naruto-ico.png"
             width={32}
@@ -64,28 +64,36 @@ export default function Header() {
             icon={`${menuOpen ? "gg:close" : "lucide:menu"}`}
           />
 
-          <ul className="hidden sm:flex gap-8 lg:gap-12 text-white/25">
+          <ul className="hidden sm:flex gap-8 lg:gap-12 text-white/80 font-normal">
             <Link
               href="#home"
-              className={`${sectionInView === "home" && "text-white"} `}
+              className={`${
+                sectionInView === "home" && "text-white font-semibold"
+              } `}
             >
               Home
             </Link>
             <Link
               href="#work"
-              className={`${sectionInView === "work" && "text-white"} `}
+              className={`${
+                sectionInView === "work" && "text-white font-semibold"
+              } `}
             >
               Work
             </Link>
             <Link
               href="#about"
-              className={`${sectionInView === "about" && "text-white"} `}
+              className={`${
+                sectionInView === "about" && "text-white font-semibold"
+              } `}
             >
               About
             </Link>
             <Link
               href="#contact"
-              className={`${sectionInView === "contact" && "text-white"} `}
+              className={`${
+                sectionInView === "contact" && "text-white font-semibold"
+              } `}
             >
               Contact
             </Link>

@@ -19,7 +19,7 @@ export default function Title({ children }: { children: React.ReactNode }) {
     <motion.h1
       ref={titleRef}
       style={{ opacity }}
-      className={`uppercase ${aeonik.className} text-4xl md:text-5xl xl:text-6xl font-bold mb-10`}
+      className={`uppercase ${aeonik.className} text-4xl md:text-5xl xl:text-6xl font-bold mb-10 lg:mb-16`}
     >
       {children}
     </motion.h1>

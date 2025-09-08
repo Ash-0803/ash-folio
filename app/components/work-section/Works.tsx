@@ -54,24 +54,22 @@ export default function Works() {
   }, [inView, setSectionInView]);
 
   return (
-    <section
-      className="flex flex-col gap-10 md:gap-20 pt-[110px]"
-      ref={ref}
-      id="work"
-    >
+    <section className=" pt-[60px] 2xl:pt-0" ref={ref} id="work">
       <Title>Projects</Title>
-      {works.map((work, index) => (
-        <FolioCard
-          key={index}
-          img={work.img}
-          title={work.title}
-          gitLink={work.gitLink}
-          liveLink={work.liveLink}
-          about={work.about}
-          stack={work.stack}
-          owner={work.owner}
-        />
-      ))}
+      <div className="flex flex-col gap-10 md:gap-20 ">
+        {works.map((work, index) => (
+          <FolioCard
+            key={index}
+            img={work.img}
+            title={work.title}
+            gitLink={work.gitLink}
+            liveLink={work.liveLink}
+            about={work.about}
+            stack={work.stack}
+            owner={work.owner}
+          />
+        ))}
+      </div>
 
       <Timeline />
     </section>

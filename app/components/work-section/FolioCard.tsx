@@ -44,7 +44,7 @@ export default function FolioCard({
         width={420}
         height={700}
         alt="work"
-        className="rounded-[10px] w-full lg:col-span-5"
+        className="rounded-[10px] w-full lg:w-[420px] lg:col-span-5"
       />
       <div className="flex flex-col gap-4 lg:col-span-7">
         <div className="flex items-center justify-between">

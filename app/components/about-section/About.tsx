@@ -27,7 +27,7 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className=" h-screen flex items-center justify-center md:mt-16"
+      className="h-dvh 2xl:h-[1000px] flex items-center justify-center md:mt-16"
       id="about"
     >
       <div className="">
@@ -39,23 +39,23 @@ export default function About() {
           I amplify brand voices through the web
         </AnimatedTitle>
         <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
-          <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-md md:text-lg">
-            <AnimatedBody className="leading-[34px] md:leading-[39px]">
+          <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-md">
+            <AnimatedBody className="tracking-wide leading-7">
               My name is Ashish Chaudhary, a FullStack Software Engineer based
-              in India. 💡 &ldquo;Developer-turned-people&rsquo;s person&rdquo;
-              — I started my career building and fixing things behind the
-              screen, from optimizing websites for lightning-fast performance to
-              untangling database spaghetti. Now, I’m taking that same
-              problem-solving mindset and moving into the client-facing world of
-              LegalTech Sales.
+              in India. <em>&ldquo;Developer-turned-people&rsquo;s</em>{" "}
+              person&ldquo; — I started my career building and fixing things
+              behind the screen, from optimizing websites for lightning-fast
+              performance to untangling database spaghetti. Now, I’m taking that
+              same problem-solving mindset and moving into the client-facing
+              world of LegalTech Sales.
             </AnimatedBody>
-            <AnimatedBody className="leading-[34px] md:leading-[39px]">
+            <AnimatedBody className="tracking-wide leading-7">
               I love translating tech jargon into plain English, helping teams
               make smarter decisions, and turning complex ideas into simple
               wins. Competitive by nature, curious by default, and always up for
               a challenge — whether it’s closing a deal, explaining CLS to a
-              non-techie, or obsessing the best bike in town. Wanna learn more?
-              Here&apos;s <br className="hidden md:block" />
+              non-techie, or obsessing the best bike in town. <br />
+              Wanna learn more? Here&apos;s{" "}
               <Link
                 className="underline"
                 href={
@@ -76,7 +76,7 @@ export default function About() {
               >
                 Frontend Tools
               </AnimatedTitle>
-              <AnimatedBody className="text-white/60 text-base md:text-lg leading-8">
+              <AnimatedBody className="text-white/60 tracking-wide">
                 JavaScript(ES6+), React, Next.js, TypeScript, Redux, Redux
                 Toolkit, React Query, HTML5, Git/GitHub, React Hook Form,
                 Formik.
@@ -90,7 +90,7 @@ export default function About() {
               >
                 UI Libraries
               </AnimatedTitle>
-              <AnimatedBody className="text-white/60 text-base md:text-lg leading-8">
+              <AnimatedBody className="text-white/60 tracking-wide">
                 CSS3/SCSS/SASS, Tailwind CSS, Styled Components, Chakra UI,
                 Framer Motion, Bootstrap, ReCharts.
               </AnimatedBody>

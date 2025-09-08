@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-
   --background-image-image-radial: radial-gradient(
     circle,
     #e3d3be 0%,
@@ -58,29 +57,15 @@ body {
   overscroll-behavior: none;
 }
 
-/* Hide scrollbars for all browsers and systems */
-* {
-  /* Chrome, Safari, Edge */
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Firefox */
-  scrollbar-width: none;
-  
-  /* Internet Explorer and Edge Legacy */
-  -ms-overflow-style: none;
-}
-
 html {
   /* Chrome, Safari, Edge */
   &::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* Firefox */
   scrollbar-width: none;
-  
+
   /* Internet Explorer and Edge Legacy */
   -ms-overflow-style: none;
 }
@@ -90,10 +75,10 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* Firefox */
   scrollbar-width: none;
-  
+
   /* Internet Explorer and Edge Legacy */
   -ms-overflow-style: none;
 }
