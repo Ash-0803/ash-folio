@@ -7,12 +7,14 @@ import Footer from "./components/contact+footer/Footer";
 import { initialBlobityOptions } from "@/utils/blobity.config";
 import useBlobity from "blobity/lib/react/useBlobity";
 import Lenis from "./components/util/Lenis";
+import ScrollProgress from "./components/util/ScrollProgress";
 
 export default function Home() {
   const blobity = useBlobity(initialBlobityOptions);
 
   return (
     <Lenis>
+      <ScrollProgress />
       <main className="overflow-x-hidden sm:overflow-x-visible">
         <Hero />
         <Works />
