@@ -11,7 +11,7 @@ I love translating tech jargon into plain English, helping teams make smarter de
 Technologies: React, Next.js, Typescript, Tailwind, React-hook-form, Email.js and Framer Motion <br>
 Hosting: Netlify
 
-[View Live Demo](https://codeash.netlify.app)
+[View Live Demo](https://ash-folio.vercel.app)
 
 # Inspiration
 
