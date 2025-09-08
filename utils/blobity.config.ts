@@ -3,7 +3,9 @@ export const initialBlobityOptions = {
   focusableElementsOffsetX: 4,
   focusableElementsOffsetY: 4,
   color: "#E3D3BE",
-  dotColor: "#08233b",
+  dotColor: "#fb2c36",
+  dotSize: 10,
+
   // color: "#222222",
   invert: true,
   focusableElements:
@@ -15,4 +17,5 @@ export const initialBlobityOptions = {
   fontColor: "#08233b",
   zIndex: 1000,
   magnetic: true,
+  kineticMorphing: true,
 };
