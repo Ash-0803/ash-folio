@@ -74,12 +74,10 @@ export default function About() {
                 charSpace={"mr-[0.001em]"}
                 className="font-bold antialiased text-xl md:text-2xl mb-2"
               >
-                Frontend Tools
+                Frontend
               </AnimatedTitle>
               <AnimatedBody className="text-white/60 tracking-wide">
-                JavaScript(ES6+), React, Next.js, TypeScript, Redux, Redux
-                Toolkit, React Query, HTML5, Git/GitHub, React Hook Form,
-                Formik.
+                JavaScript, TypeScript, React.js, Next.js, Redux, HTML5, CSS3, Tailwind CSS, Sass/SCSS
               </AnimatedBody>
             </div>
             <div>
@@ -88,11 +86,22 @@ export default function About() {
                 charSpace={"mr-[0.001em]"}
                 className="font-bold antialiased text-xl md:text-2xl mb-2"
               >
-                UI Libraries
+                Backend
               </AnimatedTitle>
               <AnimatedBody className="text-white/60 tracking-wide">
-                CSS3/SCSS/SASS, Tailwind CSS, Styled Components, Chakra UI,
-                Framer Motion, Bootstrap, ReCharts.
+                Node.js, Express.js, Python, Django, RESTful APIs, MongoDB, Mongoose, MySQL, PostgreSQL
+              </AnimatedBody>
+            </div>
+            <div>
+              <AnimatedTitle
+                wordSpace={"mr-[0.5ch]"}
+                charSpace={"mr-[0.001em]"}
+                className="font-bold antialiased text-xl md:text-2xl mb-2"
+              >
+                DevOps/Tools
+              </AnimatedTitle>
+              <AnimatedBody className="text-white/60 tracking-wide">
+                Git, GitHub, Docker, CI/CD, Firebase, Heroku, Netlify, Vercel
               </AnimatedBody>
             </div>
           </div>
