@@ -6,17 +6,20 @@ import Contact from "./components/contact+footer/Contact";
 import Footer from "./components/contact+footer/Footer";
 import { initialBlobityOptions } from "@/utils/blobity.config";
 import useBlobity from "blobity/lib/react/useBlobity";
+import Lenis from "./components/util/Lenis";
 
 export default function Home() {
   const blobity = useBlobity(initialBlobityOptions);
 
   return (
-    <main className="overflow-x-hidden sm:overflow-x-visible">
-      <Hero />
-      <Works />
-      <About />
-      <Contact />
-      <Footer />
-    </main>
+    <Lenis>
+      <main className="overflow-x-hidden sm:overflow-x-visible">
+        <Hero />
+        <Works />
+        <About />
+        <Contact />
+        <Footer />
+      </main>
+    </Lenis>
   );
 }
