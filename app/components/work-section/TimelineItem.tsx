@@ -49,7 +49,7 @@ export default function TimelineItem({
           width={70}
           height={70}
           alt="company-image"
-          className="col-span-1"
+          className="hidden md:inline-block col-span-1"
         />
 
         {/* ALL THE TEXT*/}

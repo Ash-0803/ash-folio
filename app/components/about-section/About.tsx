@@ -27,7 +27,7 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className="h-dvh 2xl:h-[1000px] flex items-center justify-center md:mt-16"
+      className="min-h-screen 2xl:min-h-[1000px]  flex items-center justify-center py-20 md:py-32"
       id="about"
     >
       <div className="">
