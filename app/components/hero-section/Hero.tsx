@@ -134,7 +134,7 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/img/ashish-pic.png"
+            src="/img/hero-img.jpeg"
             priority
             fill
             alt="Ade's picture"

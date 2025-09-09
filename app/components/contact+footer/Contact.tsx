@@ -14,6 +14,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Image from "next/image";
 
 const aeonik = localFont({
   src: "../../../public/fonts/aeonik-medium.woff2",
@@ -184,11 +185,24 @@ export default function Contact() {
                   className="text-2xl opacity-50"
                 />
               </div>
-              <div className="flex items-center h-full gap-2 w-full">
+              <div className="flex flex-col lg:flex-row items-center h-full gap-2 w-full">
+                <div
+                  className="block relative w-full max-w-2xs lg:max-w-md h-64 lg:h-[400px] rounded-xl"
+                  data-blobity-tooltip="checking me out, huh?"
+                  data-blobity-invert="false"
+                >
+                  <Image
+                    src="/img/contact-img.png"
+                    priority
+                    fill
+                    alt="Ade's picture"
+                    className="object-cover rounded-xl"
+                  />
+                </div>
                 <form
                   ref={formRef}
                   onSubmit={handleSubmit(onSubmit)}
-                  className={`back w-full flex flex-col gap-3 grow-2 basis-0`}
+                  className={`back w-full flex flex-col gap-3 grow-2 basis-0 lg:pl-10`}
                 >
                   <div className="flex gap-1 flex-col">
                     <label
