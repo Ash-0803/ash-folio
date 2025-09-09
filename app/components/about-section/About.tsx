@@ -46,9 +46,9 @@ export default function About() {
               in India. <em>&ldquo;Developer-turned-people&rsquo;s</em>{" "}
               person&ldquo; — I started my career building and fixing things
               behind the screen, from optimizing websites for lightning-fast
-              performance to untangling database spaghetti. Now, I'm taking that
-              same problem-solving mindset and moving into the client-facing
-              world of LegalTech Sales.
+              performance to untangling database spaghetti. Now, I&apos;m taking
+              that same problem-solving mindset and moving into the
+              client-facing world of LegalTech Sales.
             </AnimatedBody>
           </div>
 
@@ -58,8 +58,8 @@ export default function About() {
               I love translating tech jargon into plain English, helping teams
               make smarter decisions, and turning complex ideas into simple
               wins. Competitive by nature, curious by default, and always up for
-              a challenge — whether it's closing a deal, explaining CLS to a
-              non-techie, or obsessing the best bike in town.
+              a challenge — whether it&apos;s closing a deal, explaining CLS to
+              a non-techie, or obsessing the best bike in town.
             </AnimatedBody>
           </div>
           {/* Skills Section - each spans 2 columns on lg+ screens, full width on mobile */}
@@ -177,7 +177,7 @@ export default function About() {
         </div>
         <div className="antialiased text-white/80 text-md mt-10 ">
           <AnimatedBody className="tracking-wide leading-7 flex justify-center">
-            Wanna learn more? Here's&nbsp;
+            Wanna learn more? Here&apos;s&nbsp;
             <Link
               className="underline text-white"
               href={
